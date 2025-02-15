@@ -1,0 +1,159 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.table-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.player {
+    width: 250px;
+    /* min-height: px; */
+    height: auto;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.drowBtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.getRiichiBtns .top{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+.getRiichiBtns .left{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.getRiichiBtns .bottom{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+.getRiichiBtns .right{
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+
+.east{
+    top: 50%;
+    right: calc(5% - 50px);
+    transform: translateY(-50%) rotate(-90deg);
+}
+.south{
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.west{
+    top: 50%;
+    left: calc(5% - 50px);
+    transform: translateY(-50%) rotate(90deg);
+}
+.north{
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.riichi-send-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.scores {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.temboButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-height: 100px;
+}
+
+.newTemboButton{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.existingButtons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.btn100{
+    background-color: lightgreen;
+}
+.btn1000{
+    background-color: orange;
+}
+.btn5000{
+    background-color: #0072BC;
+}
+.btn10000{
+    background: linear-gradient(to right,#de4141,#e8ac51,#f2e55c,#39a869,#4784bf,#5d5099,#a55b9a);
+}
+.riichiBtn{
+    background-color: pink;
+}
+
+/* @media (max-width: 768px){
+    .player {
+        width: 150px;
+        height: 100px;
+        padding: 5px;
+    }
+
+    .temboButton button {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+
+    .table-area {
+        width: 100px;
+        height: 100px;
+    }
+
+    .east, .west {
+        right: calc(2% + 10px);
+        left: calc(2% + 10px);
+    }
+} */
